@@ -6,6 +6,7 @@ const bundlePath = path.resolve(__dirname, "dist/");
 
 module.exports = {
   entry: "./src/index.js",
+  mode: "development",
   module: {
     rules: [
       {
