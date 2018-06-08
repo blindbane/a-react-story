@@ -54,4 +54,35 @@ yarn add -D css-loader
 yarn add -D babel-loader 
 ```
 
+## [Development Build](https://webpack.js.org/guides/development/)
 
+### cleanup before each build
+```bash
+yarn add -D html-webpack-plugin clean-webpack-plugin
+```
+Add 
+```js
+  plugins: [
+    new CleanWebpackPlugin(['dist']),
+    new HtmlWebpackPlugin({
+      title: 'Development'
+    }),
+  ],
+```
+to webpack.config.js obj.
+
+### get sourcemaps for better error messages
+
+Add
+```js
+ devtool: 'inline-source-map',
+```
+to webpack.config.js obj.
+
+### have dev server open new browser tab on start
+Update start:dev script in package.json.
+```json
+  "scripts": {
+    "start:dev": "webpack-dev-server --mode development --open"
+  },
+```
