@@ -86,3 +86,8 @@ Update start:dev script in package.json.
     "start:dev": "webpack-dev-server --mode development --open"
   },
 ```
+
+## Production Build
+```bash
+yarn add -D webpack-merge
+```
