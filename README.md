@@ -94,10 +94,15 @@ yarn add -D webpack-merge
 
 ## eslint
 
-linux / OSX
 ```bash
-(
-  export PKG=eslint-config-airbnb;
-  yarn info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs yarn add -D "$PKG@latest"
-)
+
+```
+
+## prettier w/ eslint
+```bash
+yarn add prettier --dev --exact
+```
+
+```bash
+yarn add --dev eslint-plugin-prettier eslint-config-prettier
 ```
