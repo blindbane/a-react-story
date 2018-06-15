@@ -102,3 +102,7 @@ yarn add -D webpack-merge
 ```bash
 yarn add prettier --dev --exact
 ```
+
+```bash
+yarn add --dev eslint-plugin-prettier eslint-config-prettier
+```
