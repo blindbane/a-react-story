@@ -91,3 +91,13 @@ Update start:dev script in package.json.
 ```bash
 yarn add -D webpack-merge
 ```
+
+## eslint
+
+linux / OSX
+```bash
+(
+  export PKG=eslint-config-airbnb;
+  yarn info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs yarn add -D "$PKG@latest"
+)
+```
