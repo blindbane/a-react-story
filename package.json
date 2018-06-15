@@ -4,7 +4,7 @@
     "build": "webpack --config webpack.prod.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "lint": "eslint src/**/*.{js,jsx}"
+    "lint": "eslint **/*.{js,jsx} --quiet"
   },
   "dependencies": {
     "react": "^16.4.0",
@@ -16,6 +16,7 @@
     "@storybook/addons": "^3.4.7",
     "@storybook/react": "^3.4.7",
     "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
